@@ -5,7 +5,7 @@ const port = 3000
 
 app.use(express.static(path.join(__dirname,"public")))
 app.get('/',function(req,res){
-  res.send('recharge')
+  res.sendFile(path.join(__dirname,'OnMobRec.html'))
 })
 app.get('/login',function(req,res){
   res.sendFile(path.join(__dirname,'login.html'))
